@@ -1,0 +1,66 @@
+body, html {
+    margin: 0;
+}
+
+.main_container {
+    background-color: red;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+       flex-wrap: wrap;
+   /* Or do it all in one line with flex flow */
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+      -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+
+.box {
+    width: 25%;
+    height: 33vh;
+}
+
+#home {
+    background-color: #3F51B5;
+}
+
+#box1 {
+    background-color: #E91E63;
+}
+
+#box2 {
+    background-color: #9C27B0;
+}
+
+#box3 {
+    background-color: #F44336;
+}
+#box4 {
+    background-color: #009688;
+}
+#box5 {
+    background-color: #EA626E;
+}
+#box6 {
+    background-color: #FFEB3B;
+}
+
+#box7 {
+    background-color: #00E676;
+}
+
+#box8 {
+    background-color: #673AB7;
+}
+#box9 {
+    background-color: #2196F3;
+}
+#box10 {
+    background-color: #FF5722;
+}
+#box11 {
+    background-color: #00BCD4;
+}
