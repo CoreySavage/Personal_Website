@@ -19,48 +19,59 @@ body, html {
 }
 
 .box {
-    width: 25%;
+    width: 33.3333%;
     height: 33vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
 #home {
-    background-color: #3F51B5;
+    background-color: #5B82E1;
 }
 
 #box1 {
-    background-color: #E91E63;
+    background-color: #5CEBB5;
 }
 
 #box2 {
-    background-color: #9C27B0;
+    background-color: #D58CDC;
 }
 
 #box3 {
-    background-color: #F44336;
+    background-color: #FFD77E;
 }
 #box4 {
-    background-color: #009688;
-}
-#box5 {
     background-color: #EA626E;
 }
+#box5 {
+    background-color: #5B82E1;
+}
 #box6 {
-    background-color: #FFEB3B;
+    background-color: #5CEBB5;
 }
 
 #box7 {
-    background-color: #00E676;
+    background-color: #D58CDC;
 }
 
 #box8 {
-    background-color: #673AB7;
+    background-color: #FFD77E;
 }
-#box9 {
-    background-color: #2196F3;
+
+.main_bttn {
+    width: fit-content;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    cursor: pointer;
 }
-#box10 {
-    background-color: #FF5722;
-}
-#box11 {
-    background-color: #00BCD4;
-}
+
+.box p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 4vmin;
+    color: #ffffff;
+    margin: 8px 0 16px;
+    text-align: center;
+    height: 0;
+    letter-spacing: .06em;
+} 
