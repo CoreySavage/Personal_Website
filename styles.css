@@ -8,23 +8,27 @@ body, html {
     display: flex;
     -webkit-flex-direction: row;
     flex-direction: row;
-       flex-wrap: wrap;
-   /* Or do it all in one line with flex flow */
-   -webkit-flex-flow: row wrap;
-   flex-flow: row wrap;
-      -webkit-align-items: center;
-   align-items: center;
-   -webkit-justify-content: center;
-   justify-content: center;
+    flex-wrap: wrap;
+    /* Or do it all in one line with flex flow */
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
 }
 
 .box {
     width: 33.3333%;
     height: 33vh;
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
+    -webkit-justify-content: center;
     align-items: center;
+    -webkit-align-items: center;
     flex-direction: column;
+    -webkit-flex-direction: row;
 }
 #home {
     background-color: #5B82E1;
@@ -72,6 +76,7 @@ body, html {
     color: #ffffff;
     margin: 8px 0 16px;
     text-align: center;
+    text-align: -webkit-center;
     height: 0;
     letter-spacing: .06em;
 } 
