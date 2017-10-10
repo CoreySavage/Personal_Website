@@ -1,7 +1,46 @@
+/*
+ *  Personal_Website
+ *  Stylesheet - styles.css
+ *  
+ *  Corey Savage
+ */
+
+ /*
+  *     HTML5 display definitions
+  */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+/*
+ *      Colors
+ */
+
+:root {
+  --blue: #5B82E1;
+  --red: #EA626E;
+  --green: #5CEBB5;
+  --purple: #D58CDC;
+  --orange: #FFD77E;
+}
+
+
+/*
+ *  Base 
+ */
+
 body, html {
     margin: 0;
     height: ;
 }
+
+
+
+/*
+ *  Main page
+ */
 
 .main_container {
     background-color: red;
@@ -33,36 +72,36 @@ body, html {
     -webkit-flex-direction: column;
 }
 #home {
-    background-color: #5B82E1;
+    background-color: var(--blue);
 }
 
 #box1 {
-    background-color: #5CEBB5;
+    background-color: var(--green);
 }
 
 #box2 {
-    background-color: #D58CDC;
+    background-color: var(--purple);
 }
 
 #box3 {
-    background-color: #FFD77E;
+    background-color: var(--orange);
 }
 #box4 {
-    background-color: #EA626E;
+    background-color: var(--red);
 }
 #box5 {
-    background-color: #5B82E1;
+    background-color: var(--blue);
 }
 #box6 {
-    background-color: #5CEBB5;
+    background-color: var(--green);
 }
 
 #box7 {
-    background-color: #D58CDC;
+    background-color: var(--purple);
 }
 
 #box8 {
-    background-color: #FFD77E;
+    background-color: var(--orange);
 }
 
 .main_bttn {
