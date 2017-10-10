@@ -141,6 +141,7 @@ svg:not(:root) { overflow: hidden; }
  *      Buttons
  */
 
+
 /*
  *  Main page
  */
@@ -179,6 +180,11 @@ svg:not(:root) { overflow: hidden; }
     background-color: var(--blue);
 }
 
+#box0 button:focus {
+   outline-color: var(--blue);
+}
+
+
 #box1, #box6 {
     background-color: var(--green);
 }
@@ -187,12 +193,24 @@ svg:not(:root) { overflow: hidden; }
     background-color: var(--purple);
 }
 
+#box2 button:focus {
+   outline-color: var(--purple);
+}
+
 #box3, #box8 {
     background-color: var(--orange);
 }
 
+#box8 button:focus {
+   outline-color: var(--orange);
+}
+
 #box4 {
     background-color: var(--red);
+}
+
+#box4 button:focus {
+   outline-color: var(--red);
 }
 
 .main_bttn {
