@@ -141,12 +141,27 @@ svg:not(:root) { overflow: hidden; }
  *      Buttons
  */
 
+.close_bttn {
+    float: right;
+    margin: 1vh 1vw
+}
 
+.close_bttn:hover {
+    cursor: pointer;
+}
+
+.close_bttn:hover path {
+    fill-opacity: 0.4;
+}
+
+.close_bttn:hover polygon {
+    fill-opacity: 0.8;
+}
 /*
  *  Main page
  */
 
-.main_container {
+#main_container {
     background-color: red;
     display: -webkit-flex;
     display: flex;
@@ -183,7 +198,6 @@ svg:not(:root) { overflow: hidden; }
 #box0 button:focus {
    outline-color: var(--blue);
 }
-
 
 #box1, #box6 {
     background-color: var(--green);
@@ -273,7 +287,31 @@ svg:not(:root) { overflow: hidden; }
 }
 
 
+/*
+ *      Containers
+ */
 
+#projects_container, #about_container, #contact_container {
+    width: 96%;
+    height: 96vh;
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    border: 2px solid rgba(255,255,255,.6);
+    box-shadow: 1px 1px 32px 2px rgba(0,0,0,.2);
+}
+
+#projects_container {
+    background-color: var(--purple);
+}
+
+#about_container {
+    background-color: var(--red);
+}
+
+#contact_container {
+    background-color: var(--orange);
+}
 
 
 
