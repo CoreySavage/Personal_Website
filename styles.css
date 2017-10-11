@@ -40,18 +40,20 @@ html {
 
 body {
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.4;
-    font-family: 'Muli', arial, serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: .08em;
     color: #ffffff
 }
 
 input {
-  color: #ffffff;
-  background-color: rgba(0,0,0,.8);
-  border-width: 1px;
-  border-color: rgba(76, 76, 76, 0.3);
-  border-style: solid;
+    color: #ffffff;
+    background-color: rgba(0,0,0,.8);
+    border-width: 1px;
+    border-color: rgba(76, 76, 76, 0.3);
+    border-style: solid;
 }
 
 ::-moz-selection { background: rgba(74,74,74,.6); color: #ffffff; text-shadow: none; }
@@ -62,15 +64,15 @@ input {
  */
 
 a, a:visited, a:hover, a:focus { 
-  color: #29b6f6;
-  text-decoration: none;
+    color: #29b6f6;
+    text-decoration: none;
 }
 a:hover, a:focus {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 header a, header a:visited, header a:hover, header a:focus {
-  text-decoration: none;
-  color: #ffffff
+    text-decoration: none;
+    color: #ffffff
 }
 
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
@@ -80,19 +82,32 @@ a:hover, a:active { outline: 0; }
  *      Headers
  */
 
-h3 {
-  text-align: center;
-  margin: 16px auto 0;
-  padding: 0 12px;
-  letter-spacing: .1em;
+h1 {
+    position: fixed;
+-webkit-transform: rotate(90deg);   
+-moz-transform: rotate(90deg);
+-ms-transform: rotate(90deg);
+-o-transform: rotate(90deg);
+transform: rotate(90deg);
+    font-size: 28vh;
+    /* width: 0; */
+    /* height: 0; */
+    letter-spacing: .05em;
+    bottom: 11%;
+    right: 42%;
+    color: rgba(255,255,255,.2);
 }
 
+.title {
+    margin: 0 2vw 0 4vw;
+
+}
 
 /*
  *      Typography
  */
 
-p {color: #ffffff; opacity: 0.9; filter: alpha(opacity=90); text-align: center}
+p {color: #ffffff; opacity: 0.9; filter: alpha(opacity=90);}
 
 abbr[title] { border-bottom: 1px dotted; }
 
@@ -142,8 +157,9 @@ svg:not(:root) { overflow: hidden; }
  */
 
 .close_bttn {
-    float: right;
-    margin: 1vh 1vw
+    position: absolute;
+    right: 0;
+    margin: 1vh 1vw;
 }
 
 .close_bttn:hover {
@@ -151,12 +167,64 @@ svg:not(:root) { overflow: hidden; }
 }
 
 .close_bttn:hover path {
-    fill-opacity: 0.4;
+    fill-opacity: 0.6;
 }
 
 .close_bttn:hover polygon {
-    fill-opacity: 0.8;
+    fill-opacity: 0.9;
 }
+
+
+/*
+ *      Containers
+ */
+
+#projects_container, #about_container, #contact_container {
+    width: 96%;
+    height: 96vh;
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    border: 2px solid rgba(255,255,255,.6);
+    box-shadow: 1px 1px 32px 2px rgba(0,0,0,.2);
+}
+
+#projects_container {
+    background-color: var(--purple);
+}
+
+#about_container {
+    background-color: var(--red);
+}
+
+#contact_container {
+    background-color: var(--orange);
+}
+
+.container_flexbox{
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container_right {
+    flex-basis: 60%;
+}
+.container_data {
+    flex-basis: 60%;
+    margin: 4vh 4vw 4vh 2vw;
+
+}
+
+.container_icon {
+    height: 38px;
+    flex-basis: 15%;
+    flex-shrink: 1;
+}
+
+
 /*
  *  Main page
  */
@@ -287,38 +355,68 @@ svg:not(:root) { overflow: hidden; }
 }
 
 
+
 /*
- *      Containers
+ *      About
  */
 
-#projects_container, #about_container, #contact_container {
-    width: 96%;
-    height: 96vh;
-    position: fixed;
-    top: 2%;
-    left: 2%;
-    border: 2px solid rgba(255,255,255,.6);
-    box-shadow: 1px 1px 32px 2px rgba(0,0,0,.2);
+.about_bio {
+    text-align: center;
 }
 
-#projects_container {
-    background-color: var(--purple);
+.change_name {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-#about_container {
-    background-color: var(--red);
+.about_data_title {
+    text-align: left;
+    flex-basis: 100%;
 }
 
-#contact_container {
-    background-color: var(--orange);
+/*
+ *      Responsive Design
+ */
+
+
+@media only screen and (max-width: 1440px) {
+     /* start of large tablet styles */
+
+
+}
+
+@media only screen and (max-width: 898px) {
+    
+    .container_data {
+        font-size: 12px;
+     }    
+
 }
 
 
+@media only screen and (max-width: 540px) {
+     .container_data {
+        font-size: 10px;
+     }
 
+}
 
+@media only screen and (max-height: 720px) {
+    
+    .container_data {
+        font-size: 1.8vmin;
+     }    
 
+}
 
+@media only screen and (max-height: 540px) {
+    
+    .container_data {
+        font-size: 2vmin;
+     }    
 
+}
 
 
 
