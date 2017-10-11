@@ -14,6 +14,7 @@ audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 audio:not([controls]) { display: none; }
 [hidden] { display: none; }
 
+
 /*
  *      Colors
  */
@@ -59,6 +60,7 @@ input {
 ::-moz-selection { background: rgba(74,74,74,.6); color: #ffffff; text-shadow: none; }
 ::selection { background: rgba(74,74,74,.6); color: #ffffff; text-shadow: none; }
 
+
 /*
  *      Links
  */
@@ -77,6 +79,7 @@ header a, header a:visited, header a:hover, header a:focus {
 
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
 a:hover, a:active { outline: 0; }
+
 
 /*
  *      Headers
@@ -102,6 +105,7 @@ transform: rotate(90deg);
     margin: 0 2vw 0 4vw;
 
 }
+
 
 /*
  *      Typography
@@ -139,6 +143,7 @@ sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: b
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
 
+
 /*
  *      Embedded Content
  */
@@ -151,6 +156,7 @@ img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; backgr
 
 /* Correct overflow not hidden in IE9 */
 svg:not(:root) { overflow: hidden; }
+
 
 /*
  *      Buttons
@@ -212,6 +218,7 @@ svg:not(:root) { overflow: hidden; }
 .container_right {
     flex-basis: 60%;
 }
+
 .container_data {
     flex-basis: 60%;
     margin: 4vh 4vw 4vh 2vw;
@@ -355,7 +362,6 @@ svg:not(:root) { overflow: hidden; }
 }
 
 
-
 /*
  *      About
  */
@@ -375,10 +381,10 @@ svg:not(:root) { overflow: hidden; }
     flex-basis: 100%;
 }
 
+
 /*
  *      Responsive Design
  */
-
 
 @media only screen and (max-width: 1440px) {
      /* start of large tablet styles */
@@ -393,7 +399,6 @@ svg:not(:root) { overflow: hidden; }
      }    
 
 }
-
 
 @media only screen and (max-width: 540px) {
      .container_data {
@@ -419,7 +424,6 @@ svg:not(:root) { overflow: hidden; }
 }
 
 
-
 /*
  *      Print Styles
  */
@@ -441,6 +445,7 @@ svg:not(:root) { overflow: hidden; }
   
   canvas { display: none; }
 }
+
 
 /*
  *      Helper Classes
@@ -466,5 +471,3 @@ svg:not(:root) { overflow: hidden; }
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
-
-
