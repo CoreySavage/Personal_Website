@@ -160,7 +160,7 @@ sub { bottom: -0.25em; }
 }
 
 label {
-    font-size: 1.32vw;
+    font-size: 18px;
 } 
 
 .greeting {
@@ -192,7 +192,7 @@ svg:not(:root) { overflow: hidden; }
 .close_bttn {
     position: absolute;
     right: 0;
-    margin: 1vh 1vw;
+    margin: 1vw 1vw;
 }
 
 .close_bttn:hover {
@@ -227,14 +227,15 @@ input[type=text], input[type=email], select, textarea {
 
 .short_input {
     width: 40%;
+    max-width: 320px;
 }
 
-.long_input {
+.long_input{
     width: 100%;
+    max-width: 800px;
 }
 
 textarea {
-    width: 100%;
     height: 15vh;
     resize: none;
 }
@@ -244,7 +245,6 @@ input:focus, textarea:focus {
 }
 
 input[type=submit] {
-    width: 100%;
     background-color: var(--blue);
     color: white;
     padding: 14px 20px;
@@ -457,6 +457,36 @@ input:-ms-input-placeholder { 
 .about_data_title {
     text-align: left;
     flex-basis: 100%;
+}
+
+
+/*
+ *      Project
+ */
+
+#project_container_right {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#project_thumbnail_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 486px;
+    align-self: center;
+}
+
+.project_thumbnail {
+    width: 128px;
+    height: 72px;
+    border: 1px solid #eee;
+}
+
+#project_showcase {
+    width: 100%;
+    height: 600px;
 }
 
 
