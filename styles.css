@@ -144,6 +144,33 @@ sup { top: -0.5em; }
 sub { bottom: -0.25em; }
 
 
+.label, label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    letter-spacing: .06em;
+}
+
+.label {
+    font-size: 4vmin;
+    margin: 1vh 0 2vh;
+    text-align: center;
+    text-align: -webkit-center;
+    height: 0;
+}
+
+label {
+    font-size: 1.32vw;
+} 
+
+.greeting {
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(0,0,0,.6);
+    margin: 0 0 1vh;
+    letter-spacing: .06em;
+}
+
+
 /*
  *      Embedded Content
  */
@@ -181,6 +208,72 @@ svg:not(:root) { overflow: hidden; }
 }
 
 
+/*
+ *      Forms
+ */
+
+
+input[type=text], input[type=email], select, textarea {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,.4);
+    font-size: 16px;
+    color: rgba(0,0,0,.8);
+}
+
+.short_input {
+    width: 40%;
+}
+
+.long_input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 15vh;
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    outline-width: 0; 
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: var(--blue);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type=submit]:hover {
+    background-color: #5072C5;
+}
+
+input::-webkit-input-placeholder {
+    color: rgba(75,75,75,.4); !important;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+    color: rgba(75,75,75,.4) !important;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+    color: rgba(75,75,75,.4) !important;  
+}
+ 
+input:-ms-input-placeholder {  
+    color: rgba(75,75,75,.4) !important;  
+}
 /*
  *      Containers
  */
@@ -312,25 +405,6 @@ svg:not(:root) { overflow: hidden; }
     background-color: rgba(0,0,0,0);
     border: none;
     cursor: pointer;
-}
-
-.label {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 4vmin;
-    font-weight: 300;
-    color: #ffffff;
-    margin: 1vh 0 2vh;
-    text-align: center;
-    text-align: -webkit-center;
-    height: 0;
-    letter-spacing: .06em;
-} 
-
-.greeting {
-    font-family: 'Montserrat', sans-serif;
-    color: rgba(0,0,0,.6);
-    margin: 0 0 1vh;
-    letter-spacing: .06em;
 }
 
 #greeting_welcome, #greeting_im {
