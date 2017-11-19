@@ -277,7 +277,6 @@ input:-ms-input-placeholder { 
 #projects_container, #about_container, #contact_container {
     width: 96%;
     height: 96vh;
-    min-width: 560px;
     min-height: 510px;
     position: absolute;
     top: 2%;
@@ -516,9 +515,7 @@ input:-ms-input-placeholder { 
     #projects_container, #about_container, #contact_container {
         width: 100%;
         height: 100vh;
-        min-width: 560px;
         min-height: 510px;
-        position: absolute;
         top: 0%;
         left: 0%;
         border: 0px solid rgba(255,255,255,0);
