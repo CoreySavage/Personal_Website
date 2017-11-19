@@ -82,16 +82,10 @@ a:hover, a:active { outline: 0; }
 
 
 /*
- *      Headers
+ *      Headings
  */
 
 h1 {
-    position: fixed;
--webkit-transform: rotate(90deg);   
--moz-transform: rotate(90deg);
--ms-transform: rotate(90deg);
--o-transform: rotate(90deg);
-transform: rotate(90deg);
     font-size: 28vh;
     /* width: 0; */
     /* height: 0; */
@@ -274,6 +268,8 @@ input::-moz-placeholder {  /* Firefox 19+ */
 input:-ms-input-placeholder {  
     color: rgba(75,75,75,.4) !important;  
 }
+
+
 /*
  *      Containers
  */
