@@ -222,15 +222,16 @@ input[type=text], input[type=email], select, textarea {
 .short_input {
     width: 40%;
     max-width: 320px;
+    min-width: 240px;
 }
 
-.long_input{
+.long_input, input[type=submit] {
     width: 100%;
     max-width: 800px;
 }
 
 textarea {
-    height: 15vh;
+    height: 20vh;
     resize: none;
 }
 
@@ -542,6 +543,10 @@ input:-ms-input-placeholder { 
     .container_right {
         flex-basis: 68%;
     }
+
+    label {
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width: 640px) {
@@ -580,7 +585,11 @@ input:-ms-input-placeholder { 
     
     .container_right {
         flex-basis: 92%;
-    } 
+    }
+
+     input:submit {
+        width: 50%;
+     }
 
 
 }
