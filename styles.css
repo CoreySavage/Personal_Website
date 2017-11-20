@@ -277,7 +277,7 @@ input:-ms-input-placeholder { 
 #projects_container, #about_container, #contact_container {
     width: 96%;
     height: 96vh;
-    min-height: 510px;
+    min-height: 580px;
     position: absolute;
     top: 2%;
     left: 2%;
@@ -345,13 +345,12 @@ input:-ms-input-placeholder { 
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
-    min-height: 510px;
 }
 
 .box {
     width: 33%;
     height: 33.3333vh;
-    min-height: 170px;
+    min-height: 200px;
     flex-grow: 1;
     display: flex;
     display: -webkit-flex;
@@ -462,6 +461,10 @@ input:-ms-input-placeholder { 
     flex-basis: 100%;
 }
 
+.title svg {
+    min-height: 540px;
+}
+
 
 /*
  *      Project
@@ -515,7 +518,7 @@ input:-ms-input-placeholder { 
     #projects_container, #about_container, #contact_container {
         width: 100%;
         height: 100vh;
-        min-height: 638px;
+        min-height: 582px;
         top: 0%;
         left: 0%;
         border: 0px solid rgba(255,255,255,0);
@@ -523,10 +526,17 @@ input:-ms-input-placeholder { 
         -moz-box-shadow: none;
         box-shadow: none;
     }
+
+    .box {
+        min-height: 33.333vh;
+    }
     
     .title {
-        margin: 0;
-        min-height: 600px;
+        margin: 2vh 0 0;
+    }
+
+    .title svg {
+        min-height: 540px;
     }
 
     .container_right {
