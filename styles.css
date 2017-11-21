@@ -211,14 +211,14 @@ svg:not(:root) { overflow: hidden; }
 
 
 input[type=text], input[type=email], select, textarea {
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 8px;
+    margin: 4px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     background-color: rgba(255,255,255,.4);
-    font-size: 16px;
+    font-size: 14px;
     color: rgba(0,0,0,.8);
 }
 
@@ -250,7 +250,7 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 input[type=submit]:hover {
@@ -281,7 +281,7 @@ input:-ms-input-placeholder { 
 #projects_container, #about_container, #contact_container {
     width: 96%;
     height: 96vh;
-    min-height: 540px;
+    min-height: 400px;
     position: absolute;
     top: 2%;
     left: 2%;
@@ -318,12 +318,12 @@ input:-ms-input-placeholder { 
 
 .container_data {
     flex-basis: 60%;
-    margin: 4vh 4vw 4vh 2vw;
+    padding: 1vh 4vw 0 2vw;
 
 }
 
 .container_icon {
-    height: 38px;
+    height: 32px;
     flex-basis: 15%;
     flex-shrink: 1;
 }
@@ -357,7 +357,7 @@ input:-ms-input-placeholder { 
 .box {
     width: 33%;
     height: 33.3333vh;
-    min-height: 180px;
+    min-height: 140px;
     flex-grow: 1;
     display: flex;
     display: -webkit-flex;
@@ -466,10 +466,11 @@ input:-ms-input-placeholder { 
 .about_data_title {
     text-align: left;
     flex-basis: 100%;
+    margin: 0;
 }
 
 .title svg {
-    min-height: 540px;
+    min-height: 380px;
 }
 
 
