@@ -327,6 +327,7 @@ input:-ms-input-placeholder { 
     height: 32px;
     flex-basis: 15%;
     flex-shrink: 1;
+    padding: 4px 0;
 }
 
 .container_icon svg {
@@ -617,8 +618,14 @@ input:-ms-input-placeholder { 
         font-size: 14px;
     }
 
-    input[type=text], input[type=email], input[type=submit], select, textarea {
+    input[type=text], input[type=email], select, textarea {
         padding: 6px 12px;
+        margin: 4px;
+        font-size: 14px;
+    }
+
+    input[type=submit] {
+        padding: 10px;
         margin: 4px;
         font-size: 14px;
     }
