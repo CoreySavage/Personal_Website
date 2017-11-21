@@ -922,6 +922,10 @@ input:-ms-input-placeholder { 
 
 @media only screen and (max-width: 414px) {
 
+    #projects_container, #about_container, #contact_container {
+        min-height: 520px;
+    }
+
     #greeting_welcome, #greeting_im {
         font-size: 24px;
     }
@@ -954,23 +958,25 @@ input:-ms-input-placeholder { 
     }    
 
     #lse_resizer {
-        flex-basis: 80%;
+        flex-basis: 90%;
     }
 
     #brown_comedy_resizer {
-        flex-basis: 80%;
+        flex-basis: 90%;
     }
 
     #personal_site_resizer {
-        flex-basis: 80%;
+        flex-basis: 90%;
+        padding-left: 5vw;
     }
 
     #brown_wedding_resizer {
-        flex-basis: 80%;
+        flex-basis: 90%;
+        padding-right: 5vw;
     }
 
-    #personal_site_resizer button, #brown_wedding_resizer button {
-        font-size: 5vw;
+    #lse_resizer button, #brown_comedy_resizer button {
+        font-size: 10vw;
     }
 
 }
