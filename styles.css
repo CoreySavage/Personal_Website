@@ -578,12 +578,6 @@ input:-ms-input-placeholder { 
  *      Responsive Design
  */
 
-@media only screen and (max-width: 1440px) {
-     /* start of large tablet styles */
-
-
-}
-
 @media only screen and (max-width: 992px) {
     
     #greeting_welcome, #greeting_im {
@@ -596,7 +590,7 @@ input:-ms-input-placeholder { 
     #projects_container, #about_container, #contact_container {
         width: 100%;
         height: 100vh;
-        min-height: 540px;
+        min-height: 370px;
         top: 0%;
         left: 0%;
         border: 0px solid rgba(255,255,255,0);
@@ -614,11 +608,21 @@ input:-ms-input-placeholder { 
     }
 
     .title svg {
-        min-height: 540px;
+        min-height: 360px;
     }
 
     label {
-        font-size: 16px;
+        font-size: 14px;
+    }
+
+    input[type=text], input[type=email], input[type=submit], select, textarea {
+        padding: 6px 12px;
+        margin: 4px;
+        font-size: 14px;
+    }
+
+    .container_icon {
+        height: 28px;
     }
 
     .page_content_flexbox {
@@ -747,8 +751,19 @@ input:-ms-input-placeholder { 
 
 @media only screen and (max-width: 640px) {
 
+    #main_container {
+        height: 100%;
+    }
+    .box {
+        min-height: 100px;
+    }
+
     #box5, #box6, #box7, .container_left {
         display: none !important; visibility: hidden;
+    }
+
+    #projects_container, #about_container, #contact_container {
+        min-height: 300px;
     }
 
     .box {
@@ -779,11 +794,21 @@ input:-ms-input-placeholder { 
         font-size: 6vmin;
     }
 
-     input:submit {
-        width: 50%;
-     }
+    .container_icon {
+        height: 22px;
+    }
 
-     .container_right {
+    label {
+        font-size: 12px;
+    }
+
+    input[type=text], input[type=email], input[type=submit], select, textarea {
+        padding: 4px 8px;
+        margin: 2px;
+        font-size: 12px;
+    }
+
+    .container_right {
         padding: 0 8px;
      }
 
@@ -875,7 +900,7 @@ input:-ms-input-placeholder { 
         font-size: 24px;
     }
     .container_data {
-        font-size: 16px;
+        font-size: 2.8vmin;
     }
 
     h3 {
