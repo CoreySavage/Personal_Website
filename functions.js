@@ -24,3 +24,8 @@ function contact_toggle() {
     document.getElementById("contact_container").className  = "hidden";
   }
 }
+
+
+function thumbnailHover(x) {
+  x.style.backgroundColor = "rgba(0,0,0,100)";
+}

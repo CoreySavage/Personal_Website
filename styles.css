@@ -96,6 +96,14 @@ h1 {
 }
 
 
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+}
+
+
 /*
  *      Typography
  */
@@ -273,7 +281,7 @@ input:-ms-input-placeholder { 
 #projects_container, #about_container, #contact_container {
     width: 96%;
     height: 96vh;
-    min-height: 580px;
+    min-height: 540px;
     position: absolute;
     top: 2%;
     left: 2%;
@@ -302,7 +310,7 @@ input:-ms-input-placeholder { 
 }
 
 .container_right {
-    padding: 0 8px 0 0;
+    padding: 8px 8px 8px 0;
     flex-basis: 60%;
     flex-grow: 1;
     max-width: 800px;
@@ -349,7 +357,7 @@ input:-ms-input-placeholder { 
 .box {
     width: 33%;
     height: 33.3333vh;
-    min-height: 200px;
+    min-height: 180px;
     flex-grow: 1;
     display: flex;
     display: -webkit-flex;
@@ -470,43 +478,100 @@ input:-ms-input-placeholder { 
  */
 
 #project_container_right {
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
+    max-width: 1280px;
+    height: 96%;
+
 }
 
-#project_thumbnail_container {
+.flexbox_container {
+    display: flex;
+    justify-content: center;
+}
+
+#showcase {
+    flex-basis: 100%;
+}
+
+#lse {
+   flex-basis: 25%;
+}
+
+#brown_comedy {
+   flex-basis: 25%;
+}
+
+#personal_site {
+    flex-basis: 25%;
+}
+
+#brown_wedding {
+   flex-basis: 25%;
+}
+
+.page_container_resize {
+    width: 100%;
+    height: 100%;
+    min-height: 540px;
+    margin: 0;
+}
+
+
+.page_content_flexbox {
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-self: center;
+    align-content: flex-end;
 }
 
-.project_thumbnail {
-    width: 160px;
-    height: 90px;
+.resizer {
+    max-width: 720px;
+    flex-basis: 100%;
+    padding: 2px;
 }
 
-#project_lse {
-    background-color: blue;
+.embed {
+    position: relative;
+    padding: 0 0 56.25% 0;
+    height: 0;
 }
 
-#project_brown_comedy {
-    background-color: red;    
-}
-
-#project_personal_website {
-    background-color: yellow;
-}
-
-#project_brown_wedding {
-    background-color: pink;
-}
-
-#project_showcase {
+.embed iframe, .embed svg, .embed button {
+    position: absolute;
+    top: 0px;
+    left: 0px;
     width: 100%;
-    height: 600px;
+    height: 100%;
 }
+
+.embed button {
+    color: rgba(255,255,255,0);
+    background-color: rgba(0,0,0,0);
+    font-size: 2.7vw;
+    font-weight: 300;
+    letter-spacing: 2px;
+    border: none;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+}
+
+.embed button:hover {
+    color: rgba(255,255,255,.8);
+    background-color: rgba(0,0,0,.75);
+    cursor: pointer;
+}
+
+.embed button:focus {
+    outline: 0;
+}
+
+#lse_thumb {
+    background-image: url(img/personal_website.png);
+    background-size: cover;
+}
+
 
 
 /*
@@ -519,13 +584,13 @@ input:-ms-input-placeholder { 
 
 }
 
-@media only screen and (max-width: 898px) {
+@media only screen and (max-width: 992px) {
     
     #greeting_welcome, #greeting_im {
         font-size: 4.4vmin;
     }
     .container_data {
-        font-size: 12px;
+        font-size: 1.4vmax;
     }
 
     #projects_container, #about_container, #contact_container {
@@ -555,8 +620,128 @@ input:-ms-input-placeholder { 
     label {
         font-size: 16px;
     }
-    .project_thumbnail {
-        flex-basis: 25%;
+
+    .page_content_flexbox {
+        align-content: center;
+    }
+
+    #showcase {
+        display: none;
+        visibility: hidden;
+    }
+
+
+    #lse {
+       flex-basis: 100%;
+    }
+
+    #brown_comedy {
+       flex-basis: 100%;
+    }
+
+    #personal_site {
+        flex-basis: 50%;
+    }
+
+    #brown_wedding {
+       flex-basis: 50%;
+    }
+
+    #lse_resizer {
+        flex-basis: 75%;
+    }
+
+    #brown_comedy_resizer {
+        flex-basis: 75%;
+    }
+
+    #personal_site_resizer {
+        flex-basis: 70%;
+        padding-left: 8vw;
+    }
+
+    #brown_wedding_resizer {
+        flex-basis: 70%;
+        padding-right: 8vw;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    #lse {
+       flex-basis: 100%;
+    }
+
+    #brown_comedy {
+       flex-basis: 100%;
+    }
+
+    #personal_site {
+        flex-basis: 100%;
+    }
+
+    #brown_wedding {
+       flex-basis: 100%;
+    }    
+
+    #lse_resizer {
+        flex-basis: 62%;
+    }
+
+    #brown_comedy_resizer {
+        flex-basis: 62%;
+    }
+
+    #personal_site_resizer {
+        flex-basis: 62%;
+        padding-left: 0;
+    }
+
+    #brown_wedding_resizer {
+        flex-basis: 62%;
+        padding-right: 0;
+    }
+
+}
+
+@media only screen and (max-width: 992px) and (max-height: 826px) {
+    
+    #lse {
+       flex-basis: 50%;
+    }
+
+    #brown_comedy {
+       flex-basis: 50%;
+    }
+
+    #personal_site {
+        flex-basis: 50%;
+    }
+
+    #brown_wedding {
+       flex-basis: 50%;
+    }    
+
+    #lse_resizer {
+        flex-basis: 100%;
+    }
+
+    #brown_comedy_resizer {
+        flex-basis: 100%;
+    }
+
+    #personal_site_resizer {
+        flex-basis: 100%;
+        padding-left: 0;
+    }
+
+    #brown_wedding_resizer {
+        flex-basis: 100%;
+        padding-right: 0;
     }
 }
 
@@ -602,41 +787,140 @@ input:-ms-input-placeholder { 
         padding: 0 8px;
      }
 
-     #project_flexbox {
-        align-items: flex-start;
-     }
+    h3 {
+        font-size: 42px;
+    }
 
-     #project_container_right {
-        padding: 0;
-     }
+    #lse {
+       flex-basis: 100%;
+    }
 
-     #project_showcase {
-        display: none;
-        visibility: hidden;
-     }
+    #brown_comedy {
+       flex-basis: 100%;
+    }
 
-     #project_thumbnail_container {
-        width: 100%;
-        min-height: 320px;
-     }
+    #personal_site {
+        flex-basis: 50%;
+    }
 
-     .project_thumbnail {
+    #brown_wedding {
+       flex-basis: 50%;
+    }    
+
+    #lse_resizer {
+        flex-basis: 90%;
+    }
+
+    #brown_comedy_resizer {
+        flex-basis: 90%;
+    }
+
+    #personal_site_resizer {
+        flex-basis: 80%;
+    }
+
+    #brown_wedding_resizer {
+        flex-basis: 80%;
+    }
+
+    #lse_resizer button, #brown_comedy_resizer button {
+        font-size: 10vw;
+    }
+
+    #personal_site_resizer button, #brown_wedding_resizer button {
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (max-width: 640px) and (max-height: 826px) {
+    #lse {
+       flex-basis: 50%;
+    }
+
+    #brown_comedy {
+       flex-basis: 50%;
+    }
+
+    #personal_site {
+        flex-basis: 50%;
+    }
+
+    #brown_wedding {
+       flex-basis: 50%;
+    }    
+
+    #lse_resizer {
         flex-basis: 100%;
-        height: 25vh;
-        min-height: 80px;
-     }
+    }
 
+    #brown_comedy_resizer {
+        flex-basis: 100%;
+    }
+
+    #personal_site_resizer {
+        flex-basis: 100%;
+        padding-left: 0;
+    }
+
+    #brown_wedding_resizer {
+        flex-basis: 100%;
+        padding-right: 0;
+    }
 
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 400px) {
 
     #greeting_welcome, #greeting_im {
         font-size: 24px;
     }
-     .container_data {
-        font-size: 10px;
-     }
+    .container_data {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 38px;
+    }
+
+    #project_container_right {
+        padding: 0 4px;
+    }
+
+    #lse {
+       flex-basis: 100%;
+    }
+
+    #brown_comedy {
+       flex-basis: 100%;
+    }
+
+    #personal_site {
+        flex-basis: 50%;
+    }
+
+    #brown_wedding {
+       flex-basis: 50%;
+    }    
+
+    #lse_resizer {
+        flex-basis: 100%;
+    }
+
+    #brown_comedy_resizer {
+        flex-basis: 100%;
+    }
+
+    #personal_site_resizer {
+        flex-basis: 100%;
+    }
+
+    #brown_wedding_resizer {
+        flex-basis: 100%;
+    }
+
+    #personal_site_resizer button, #brown_wedding_resizer button {
+        font-size: 5vw;
+    }
 
 }
 
