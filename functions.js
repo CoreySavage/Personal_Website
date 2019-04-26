@@ -34,12 +34,10 @@ function projects_content_toggle(id) {
     document.getElementById(id).className = " ";
     document.getElementById("image_slider").className = "";
     if (id == "lse_content") {
-      for (let value of document.getElementsByClassName("slide")) {
-        value.style.backgroundImage = "url(img/lse/lse_landing.png)";
-        value.style.backgroundImage = "url(img/lse/lse_landing.png)"; 
-        value.style.backgroundImage = "url(img/lse/lse_landing.png)"; 
-        value.style.backgroundImage = "url(img/lse/lse_landing.png)";  
-      }
+      document.getElementById("slide1").style.backgroundImage = "url(img/lse/lse_landing.png)";
+      document.getElementById("slide2").style.backgroundImage = "url(img/lse/lse_login.png)";
+      document.getElementById("slide3").style.backgroundImage = "url(img/lse/lse_server.png)";
+      document.getElementById("slide4").style.backgroundImage = "url(img/lse/lse_item.png)";
     }
     else if (id == "brown_wedding_content") {
       document.getElementById("slide1").style.backgroundImage = "url(img/brown_wedding/brown_wedding_landing.png)";
